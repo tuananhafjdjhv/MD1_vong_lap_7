@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+  <script>
+    let a = prompt('Nhap so vao');
+    if (a===1 || a===2) {
+      alert(a+' '+'la so nguyen to')
+    } else {
+
+        for (var i = 2; a > i; i++) {
+          if (a % i === 0) {
+            alert(a + ' ' + 'khong phai so nguyen to')
+            break;
+          } else {
+            alert(a + ' ' + 'la so nguyen to')
+            break;
+          }
+        }
+      }
+  </script>
+</body>
+</html>
