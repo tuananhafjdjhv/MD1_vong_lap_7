@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button name="" style="text-align: center" onclick="doanSo()"> Choi</button>
+
+<script>
+    function doanSo() {
+        let a = prompt('NHap so du doan:')
+        let x = 10 + Math.round(Math.random() * 5)
+        if (a === x) {
+            window.alert('ban da nhap dung')
+        } else if (a < x) {
+            window.alert('so ban nhap nho hon ')
+        } else {
+            window.alert('so ban nhap lon hon')
+        }
+        console.log('>>>>>>>>>>>', a, x)
+    }
+</script>
+</body>
+</html>

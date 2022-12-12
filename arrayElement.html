@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<h1>Game doan so</h1>
+<h2 id="hienThiThongBao"></h2>
+<input id="NhapSoDoan">
+<button onclick="choiGame()" id="btn">Doan</button>
+<div id="soLuotchs"></div>
+
+
+<script>
+    let count = 3
+    document.getElementById('soLuotchs').innerHTML= +count;
+    function choiGame() {
+        let x = document.getElementById('NhapSoDoan').value;
+        let random = Math.floor(Math.random() * 3)
+
+        console.log(random)
+        count--;
+        document.getElementById('soLuotchs').innerHTML= "so luot chs con lai" +count;
+
+        if (x == random) {
+            document.getElementById('hienThiThongBao').innerHTML = "Tuan anh Win";
+
+        } else if (x != random) {
+            document.getElementById('hienThiThongBao').innerHTML = 'Dot nat sai roi'
+
+        } if(count == 0)
+        {
+            document.getElementById('hienThiThongBao').innerHTML = 'you lose';
+
+        }
+
+    }
+</script>
+</body>
+</html>
